@@ -1,26 +1,24 @@
-# Solace Chat Application - Developer Exercise 5
+# FROM THE UDEMY SOLACE DEVELOPMENT COURSE
 
-In this section, you will change the REST-ful POST to Solace to a Request-Reply and you will implement the consumer that listens to a request and responds appropriately.
+# Clean repo for me to play with  uwing docer and the chat application.
+## from bonus repo
 
-* Modify SolaceCloudProxy.java to send request message
-* Modify LoginMessageReplier.java to receive login requests, process them, and send reply message back
 
-To run the web-server, type the following command:
+# Solace-chat-app-With-Docker
 
-```
-cd web-app-server
-mvn spring-boot:run
-```
 
-To run the web-server, type the following command:
+docker run -d -p 8080:8080 -p 55555:55555 -p 9000:9000 -p 80:80 --shm-size=2g --env username_admin_globalaccesslevel=admin --env username_admin_password=admin --name solace-dev solace/solace-pubsub-standard
 
-```
-cd auth-server
-mvn spring-boot:run
-```
+
+localhost:8080
+
+find the username and pw in the map
+auth-server/src/main/java/com/solace/chat/application/auth/server/HashMapCredentialRepository.java
+
+ValidUser, solace
+
 
 * Navigate to http://localhost:8081/ to bring up the chat application
 * Attempt login with user from HashMapCredentialsRepo.java (eg username: ValidUser password: solace)
 * Notice login is successful
-# Solace-chat-app-With-Docker
 # Solace-chat-app-With-Docker
