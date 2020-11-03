@@ -17,8 +17,8 @@ auth-server/src/main/java/com/solace/chat/application/auth/server/HashMapCredent
 
 ValidUser, solace
 
-
-* Navigate to http://localhost:8081/ to bring up the chat application
+source doccs:
+* Navigate to http://localhost:8080 to bring up the chat application
 * Attempt login with user from HashMapCredentialsRepo.java (eg username: ValidUser password: solace)
 * Notice login is successful
 # Solace-chat-app-With-Docker
